@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Match" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WSn-ec-FBB">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTX-vl-0eM">
+                                <rect key="frame" x="0.0" y="20" width="667" height="355"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4sF-Ud-UIk">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="710"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="510" placeholderIntrinsicHeight="170" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-xc-Y6m">
+                                                <rect key="frame" x="78.5" y="0.0" width="510" height="170"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="510" placeholderIntrinsicHeight="170" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q93-oH-n6p">
+                                                <rect key="frame" x="78.5" y="180" width="510" height="170"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="510" placeholderIntrinsicHeight="170" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JHt-Sg-l7u">
+                                                <rect key="frame" x="78.5" y="360" width="510" height="170"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="510" placeholderIntrinsicHeight="170" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="X9x-4n-0WR">
+                                                <rect key="frame" x="78.5" y="540" width="510" height="170"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4sF-Ud-UIk" secondAttribute="trailing" id="5r1-Jh-2g6"/>
+                                    <constraint firstAttribute="bottom" secondItem="4sF-Ud-UIk" secondAttribute="bottom" id="Ceu-fd-bL7"/>
+                                    <constraint firstItem="4sF-Ud-UIk" firstAttribute="centerX" secondItem="OTX-vl-0eM" secondAttribute="centerX" id="m8o-Kv-5kd"/>
+                                    <constraint firstItem="4sF-Ud-UIk" firstAttribute="leading" secondItem="OTX-vl-0eM" secondAttribute="leading" id="rhe-gT-NUH"/>
+                                    <constraint firstItem="4sF-Ud-UIk" firstAttribute="top" secondItem="OTX-vl-0eM" secondAttribute="top" id="szQ-tI-zVB"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtx-cI-y5B">
+                                <rect key="frame" x="40" y="40" width="33.5" height="72"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" red="0.96853297477567435" green="1" blue="0.85281336952676889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vtx-cI-y5B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="0AM-kG-5YX"/>
+                            <constraint firstAttribute="trailing" secondItem="WSn-ec-FBB" secondAttribute="trailing" id="0QG-d2-Evc"/>
+                            <constraint firstAttribute="trailing" secondItem="OTX-vl-0eM" secondAttribute="trailing" id="1Nh-hR-qnC"/>
+                            <constraint firstItem="WSn-ec-FBB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Gr-K5-DC7"/>
+                            <constraint firstItem="OTX-vl-0eM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DlV-Ia-zhR"/>
+                            <constraint firstItem="vtx-cI-y5B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="IWZ-ys-hYL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OTX-vl-0eM" secondAttribute="bottom" id="QKo-wb-2ru"/>
+                            <constraint firstItem="OTX-vl-0eM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W8H-lu-8FG"/>
+                            <constraint firstItem="WSn-ec-FBB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cxl-H4-25N"/>
+                            <constraint firstAttribute="bottom" secondItem="WSn-ec-FBB" secondAttribute="bottom" id="q1d-mM-sOA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countDownLabel" destination="vtx-cI-y5B" id="lEf-WO-i6f"/>
+                        <outlet property="firstStackView" destination="SLW-xc-Y6m" id="0nz-MA-w5Q"/>
+                        <outlet property="fourthStackView" destination="X9x-4n-0WR" id="5Ij-M6-JRa"/>
+                        <outlet property="secondStackView" destination="q93-oH-n6p" id="XZ3-mY-sh6"/>
+                        <outlet property="thirdStackView" destination="JHt-Sg-l7u" id="0QE-o8-q8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="667" height="621"/>
+    </resources>
+</document>
